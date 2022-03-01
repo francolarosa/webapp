@@ -1,5 +1,5 @@
 const PMT = document.querySelector('page-manager-template');
-PMT.$.urlPage('sarasa');
+PMT.$.urlPage('');
 
 document.addEventListener('go-to-page', (e) => {
     PMT.setAttribute('url-page', e.detail.page);

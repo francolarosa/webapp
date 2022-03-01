@@ -32,8 +32,9 @@ if os.path.exists(current_dir + '/components'):
     component_script.write("  }\n")
     component_script.write("}")
     component_script.write("\n\n")
-    component_script.write("window.customElements.define("+ classFormated +".is,"+ classFormated +")")
+    component_script.write("window.customElements.define("+ classFormated +".is, "+ classFormated +")")
     component_script.close()
-    
+else:
+    os.mkdir(current_dir + '/components')
     
     

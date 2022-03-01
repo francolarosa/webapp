@@ -57,7 +57,6 @@ class Component extends HTMLElement {
     this.cssPath = window.location.pathname.replace('index.html', `components/${this.constructor.is}/${this.constructor.is}.css`);
     this.link = `<link rel="stylesheet" type="text/css" href="${this.cssPath}">`;
     this.$ = {};
-    console.log(this.constructor.is)
     this._template = document.createElement("template");
     this._shadowroot = this.attachShadow({ mode: "open" });
     this._template.innerHTML = `

@@ -16,6 +16,11 @@ def makeFile(value):
 
 page_name = str(input("Ingrese el nombre de la nueva pagina: "))
 
+
+
+if ifPath('pages') is False:
+    makeDir('pages')
+
     
 if ifPath('pages/' + page_name + '.js') is False:
     file = makeFile('pages/' + page_name + '.js')
